@@ -44,11 +44,10 @@ package net.alea.beaconsimulator;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
-
-import androidx.appcompat.widget.Toolbar;
 
 
 public class ActivitySettings extends LocalizationActivity {

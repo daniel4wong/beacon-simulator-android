@@ -46,6 +46,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
@@ -55,8 +56,6 @@ import com.akexorcist.localizationactivity.LocalizationActivity;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
-import androidx.appcompat.widget.Toolbar;
 
 public class ActivityLicenses extends LocalizationActivity {
 

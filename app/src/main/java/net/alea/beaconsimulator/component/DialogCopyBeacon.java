@@ -44,20 +44,18 @@ package net.alea.beaconsimulator.component;
 
 import android.app.Activity;
 import android.os.Bundle;
+import androidx.annotation.Nullable;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.android.material.textfield.TextInputEditText;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import com.google.android.material.textfield.TextInputEditText;
-
 import net.alea.beaconsimulator.App;
 import net.alea.beaconsimulator.R;
 import net.alea.beaconsimulator.bluetooth.BeaconStore;
 import net.alea.beaconsimulator.bluetooth.model.BeaconModel;
-
-import androidx.annotation.Nullable;
 
 public class DialogCopyBeacon extends BottomSheetDialogFragment {
 

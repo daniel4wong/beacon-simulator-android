@@ -44,26 +44,25 @@ package net.alea.beaconsimulator;
 import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
-import com.google.android.material.navigation.NavigationView;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-
-import androidx.annotation.IntDef;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 
 
 @SuppressLint("Registered")
@@ -129,6 +128,7 @@ public class ActivityDrawer extends LocalizationActivity implements NavigationVi
         }
         return true;
     }
+
 
     protected void initNavigationDrawer(View mainView, Toolbar toolbar){
         mDrawerLayout = (DrawerLayout) mainView.findViewById(R.id.drawer_drawerlayout);

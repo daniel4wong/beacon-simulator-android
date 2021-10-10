@@ -58,7 +58,6 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <!-- iBeacon support is removed due to license restriction from Apple -->
         <TextView
-            android:visibility="gone"
             android:id="@+id/newbeacon_textview_ibeacon"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
@@ -68,7 +67,6 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
             android:textColor="@android:color/black"
             android:layout_columnWeight="1"
             android:layout_gravity="center" />
-
 
         <TextView
             android:id="@+id/newbeacon_textview_altbeacon"

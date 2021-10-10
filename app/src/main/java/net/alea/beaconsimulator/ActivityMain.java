@@ -42,28 +42,25 @@
 package net.alea.beaconsimulator;
 
 import android.animation.ObjectAnimator;
-import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.Bundle;
-import android.view.View;
-
+import androidx.annotation.Nullable;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.widget.Toolbar;
+import android.view.View;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 
 public class ActivityMain extends ActivityDrawer implements  FragmentScanner.OnScannerActionDelegate {
 
@@ -107,7 +104,6 @@ public class ActivityMain extends ActivityDrawer implements  FragmentScanner.OnS
     }
 
 
-    @SuppressLint("MissingSuperCall")
     @Override
     protected void onNewIntent(Intent intent) {
         if (intent == null || intent.getExtras() == null) {

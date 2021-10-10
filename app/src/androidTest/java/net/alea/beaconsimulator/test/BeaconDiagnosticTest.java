@@ -1,8 +1,18 @@
 package net.alea.beaconsimulator.test;
 
-import static android.support.test.InstrumentationRegistry.*;
 
+import static android.support.test.espresso.Espresso.*;
+
+import static android.support.test.InstrumentationRegistry.*;
+import android.support.test.espresso.Espresso;
+import static android.support.test.espresso.matcher.ViewMatchers.*;
+import static android.support.test.espresso.action.ViewActions.*;
+
+import static android.support.test.espresso.assertion.ViewAssertions.*;
+import android.support.test.espresso.contrib.RecyclerViewActions;
+import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.filters.LargeTest;
+import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
 import net.alea.beaconsimulator.ActivityMain;
@@ -21,22 +31,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import androidx.test.espresso.Espresso;
-import androidx.test.espresso.IdlingResource;
-import androidx.test.espresso.contrib.RecyclerViewActions;
-import androidx.test.espresso.matcher.ViewMatchers;
-import androidx.test.rule.ActivityTestRule;
-
-import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.Espresso.openActionBarOverflowOrOptionsMenu;
-import static androidx.test.espresso.action.ViewActions.click;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.ViewMatchers.assertThat;
-import static androidx.test.espresso.matcher.ViewMatchers.hasDescendant;
-import static androidx.test.espresso.matcher.ViewMatchers.isChecked;
-import static androidx.test.espresso.matcher.ViewMatchers.isNotChecked;
-import static androidx.test.espresso.matcher.ViewMatchers.withId;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static net.alea.beaconsimulator.test.espresso.MoreMatchers.*;
 import static net.alea.beaconsimulator.test.espresso.EspressoUtils.*;
 import static net.alea.beaconsimulator.test.espresso.MoreViewActions.*;
@@ -46,6 +40,7 @@ import static org.hamcrest.Matchers.*;
 @LargeTest
 @RunWith(AndroidJUnit4.class)
 public class BeaconDiagnosticTest {
+
 
     final static BluetoothIdlingResource sBtIdlingResource = new BluetoothIdlingResource(getInstrumentation().getTargetContext());
 
@@ -57,7 +52,7 @@ public class BeaconDiagnosticTest {
 
     @BeforeClass
     public static void beforeClass() {
-        Espresso.registerIdlingResources((IdlingResource) sBtIdlingResource);
+        Espresso.registerIdlingResources(sBtIdlingResource);
         App.getInstance().getConfig().setBroadcastResilience(false);
     }
 

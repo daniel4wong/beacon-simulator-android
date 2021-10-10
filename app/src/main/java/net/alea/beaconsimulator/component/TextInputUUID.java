@@ -42,14 +42,13 @@
 package net.alea.beaconsimulator.component;
 
 import android.content.Context;
+import com.google.android.material.textfield.TextInputEditText;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
-
-import com.google.android.material.textfield.TextInputEditText;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

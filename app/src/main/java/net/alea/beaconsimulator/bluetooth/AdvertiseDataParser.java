@@ -42,7 +42,6 @@
 package net.alea.beaconsimulator.bluetooth;
 
 import android.bluetooth.le.ScanRecord;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
