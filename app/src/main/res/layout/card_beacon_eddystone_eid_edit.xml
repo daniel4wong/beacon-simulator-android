@@ -41,7 +41,7 @@ You should have received a copy of the GNU General Public License along with
 this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<android.support.v7.widget.CardView
+<androidx.cardview.widget.CardView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_gravity="center"
@@ -113,31 +113,31 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
             </LinearLayout>
         </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cardeddystoneeid_textinputlayout_idkey">
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/card_eddystone_eid_identitykey"
                     android:digits="0123456789ABCDEF"
                     android:inputType="textCapCharacters"
                     android:id="@+id/cardeddystoneeid_textinput_idkey" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cardeddystoneeid_textinputlayout_offset">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/card_eddystone_eid_offset"
                     android:inputType="number|numberSigned"
                     android:id="@+id/cardeddystoneeid_textinput_offset" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <RelativeLayout
                 android:orientation="horizontal"
@@ -151,20 +151,20 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
                     android:layout_height="0dp"
                     android:layout_width="0dp" />
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/cardeddystoneeid_textinputlayout_power"
                     android:layout_gravity="fill"
                     android:layout_columnWeight="1"
                     android:layout_toLeftOf="@id/divider1">
-                    <android.support.design.widget.TextInputEditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/all_tx_power"
                         android:inputType="numberSigned"
                         android:id="@+id/cardeddystoneeid_textinput_power" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -211,4 +211,4 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
 
         </LinearLayout>
 
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>

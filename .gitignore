@@ -51,6 +51,8 @@ captures/
 *.ipr
 *~
 *.swp
+.idea
+.idea/
 
 # Android Patch
 gen-external-apklibs

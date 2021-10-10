@@ -45,8 +45,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -54,6 +52,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 import net.alea.beaconsimulator.R;
 import net.alea.beaconsimulator.bluetooth.model.BeaconModel;
@@ -281,4 +282,5 @@ public class ViewEditEddystoneUrl extends FrameLayout implements BeaconModelEdit
         }
 
     }
+
 }

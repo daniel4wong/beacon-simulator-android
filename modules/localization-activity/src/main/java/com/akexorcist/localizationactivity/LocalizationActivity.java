@@ -24,9 +24,10 @@ package com.akexorcist.localizationactivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import java.util.Locale;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by Akexorcist on 7/20/15 AD.

@@ -44,7 +44,6 @@ package net.alea.beaconsimulator.bluetooth.model;
 import android.bluetooth.le.AdvertiseSettings;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
@@ -59,6 +58,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.UUID;
+
+import androidx.annotation.Nullable;
 
 public class BeaconModel implements Parcelable {
 

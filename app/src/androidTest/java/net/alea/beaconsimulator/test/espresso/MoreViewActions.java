@@ -6,6 +6,8 @@ import android.view.View;
 
 import org.hamcrest.Matcher;
 
+import androidx.test.espresso.ViewAction;
+
 public class MoreViewActions {
 
     public static ViewAction clickChildViewWithId(final int id) {

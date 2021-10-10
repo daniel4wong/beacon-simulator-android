@@ -41,7 +41,7 @@ You should have received a copy of the GNU General Public License along with
 this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_gravity="center"
     android:layout_width="match_parent"
@@ -61,7 +61,7 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
             android:text="@string/all_ibeacon" />
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_height="wrap_content"
             android:id="@+id/cardibeacon_textinputlayout_uuid"
             android:layout_width="match_parent">
@@ -72,7 +72,7 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
                 android:hint="@string/all_uuid"
                 android:inputType="text"
                 android:id="@+id/cardibeacon_textinput_uuid" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -84,33 +84,33 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
                 android:layout_height="0dp"
                 android:layout_width="0dp" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cardibeacon_textinputlayout_major"
                 android:layout_toStartOf="@id/divider1">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/all_major"
                     android:inputType="number"
                     android:id="@+id/cardibeacon_textinput_major" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cardibeacon_textinputlayout_minor"
                 android:layout_toEndOf="@id/divider1">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/all_minor"
                     android:inputType="number"
                     android:id="@+id/cardibeacon_textinput_minor" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -124,19 +124,19 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
                 android:layout_height="0dp"
                 android:layout_width="0dp" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cardibeacon_textinputlayout_power"
                 android:layout_toStartOf="@id/divider2">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/all_tx_power"
                     android:inputType="numberSigned"
                     android:id="@+id/cardibeacon_textinput_power" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -157,4 +157,4 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
 
     </LinearLayout>
 
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>

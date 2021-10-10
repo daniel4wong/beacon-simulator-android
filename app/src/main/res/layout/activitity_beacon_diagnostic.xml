@@ -48,13 +48,13 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/beacondiag_toolbar"
         android:background="?attr/colorPrimary"
         app:popupTheme="@style/AppTheme.PopupOverlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:padding="10dp"
@@ -105,9 +105,9 @@ this program.  If not, see <http://www.gnu.org/licenses/>.
                 app:srcCompat="@drawable/ic_menu_broadcast_on"
                 android:contentDescription="@string/action_autodiagnostic"
                 android:layout_weight="1"
-                android:tint="#000"
                 android:layout_width="75dp"
-                android:layout_height="75dp" />
+                android:layout_height="75dp"
+                app:tint="#000" />
 
             <TextView
                 android:layout_width="wrap_content"

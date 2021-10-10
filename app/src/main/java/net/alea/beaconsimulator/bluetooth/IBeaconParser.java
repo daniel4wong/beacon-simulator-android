@@ -1,10 +1,11 @@
 package net.alea.beaconsimulator.bluetooth;
 
 import android.bluetooth.le.ScanRecord;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import net.alea.beaconsimulator.bluetooth.model.IBeacon;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class IBeaconParser implements AdvertiseDataParser<IBeacon> {
 

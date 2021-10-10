@@ -41,6 +41,7 @@
 
 package net.alea.beaconsimulator.bluetooth;
 
+import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -62,9 +63,6 @@ import android.os.Build;
 import android.os.IBinder;
 import android.os.ParcelUuid;
 import android.os.SystemClock;
-import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
 import android.widget.Toast;
 
 import net.alea.beaconsimulator.ActivityMain;
@@ -91,6 +89,10 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.UUID;
+
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 
 
 public class BeaconSimulatorService extends Service {
@@ -249,6 +251,7 @@ public class BeaconSimulatorService extends Service {
         startBroadcast(serviceStartId, id, true);
     }
 
+    @SuppressLint("MissingPermission")
     private void startBroadcast(int serviceStartId, UUID id, boolean isRestart) {
         if ( !isRestart && mAdvertiseCallbacks.containsKey(id)) {
             sLogger.info("Already broadcasting this beacon model, skipping");
@@ -285,8 +288,7 @@ public class BeaconSimulatorService extends Service {
         }
     }
 
-
-
+    @SuppressLint("MissingPermission")
     private void stopBroadcast(int serviceStartId, UUID id, boolean isRestart, boolean ignoreServiceStartId) {
         final AdvertiseCallback adCallback = mAdvertiseCallbacks.get(id);
         if (adCallback != null) {

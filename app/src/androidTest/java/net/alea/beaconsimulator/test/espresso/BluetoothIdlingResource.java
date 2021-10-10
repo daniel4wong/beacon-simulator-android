@@ -4,7 +4,8 @@ package net.alea.beaconsimulator.test.espresso;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
-import android.support.test.espresso.IdlingResource;
+
+import androidx.test.espresso.IdlingResource;
 
 public class BluetoothIdlingResource implements IdlingResource {
 

@@ -42,10 +42,11 @@
 package net.alea.beaconsimulator;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
+
+import androidx.fragment.app.Fragment;
 
 public class ActivityDetailedScan extends LocalizationActivity {
 

@@ -43,7 +43,6 @@ package net.alea.beaconsimulator.bluetooth;
 
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -55,6 +54,8 @@ import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.Map;
 import java.util.UUID;
+
+import androidx.annotation.Nullable;
 
 public class BtNumbers {
 
@@ -123,8 +124,5 @@ public class BtNumbers {
             throw new RuntimeException(e);
         }
     }
-
-
-
 
 }

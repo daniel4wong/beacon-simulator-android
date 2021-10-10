@@ -43,8 +43,6 @@ package net.alea.beaconsimulator.component;
 
 import android.content.Context;
 import android.os.Handler;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -54,6 +52,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 import net.alea.beaconsimulator.R;
 import net.alea.beaconsimulator.bluetooth.ByteTools;
